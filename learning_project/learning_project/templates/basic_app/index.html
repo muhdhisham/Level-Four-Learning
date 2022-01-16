@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% extends 'basic_app/base.html' %}
+
+{% load my_extra_templates %}
+{% block body_block %}
+    <h1>WELCOME TO INDEX</h1>
+    <h2>This is index page</h2>
+    <h3>
+    {{text|cut:'world'}}
+    {{number|add:"100"}}
+</h3>
+    {% endblock body_block %}
